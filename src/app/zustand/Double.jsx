@@ -1,10 +1,10 @@
 // app/zustand/Double.jsx
 "use client";
 
-import Container from "@/app/(components)/Container";
 import { useDouble } from "@/app/zustand/store";
+import { Box } from "@chakra-ui/react";
 
 export default function Double() {
   const dbl = useDouble();
-  return <Container>Double: {dbl}</Container>;
+  return <Box>Double: {dbl}</Box>;
 }

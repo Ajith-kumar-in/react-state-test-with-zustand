@@ -1,19 +1,20 @@
 // app/page.jsx
 "use client";
 
-import Container from "@/app/(components)/Container";
-import H1 from "@/app/(components)/H1";
+import { Box, Heading } from "@chakra-ui/react";
 import Count from "@/app/zustand/Count";
 import Double from "@/app/zustand/Double";
 import Inc from "@/app/zustand/Inc";
 
 export default function Home() {
   return (
-    <Container>
-      <H1>Zustand Counter</H1>
+    <Box maxW="container.md" mx="auto" p={4}>
+      <Heading as="h1" size="xl" mb={6}>
+        Zustand Counter
+      </Heading>
       <Count />
       <Double />
       <Inc />
-    </Container>
+    </Box>
   );
 }

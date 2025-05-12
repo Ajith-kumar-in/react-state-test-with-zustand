@@ -1,10 +1,10 @@
 // app/zustand/Count.jsx
 "use client";
 
-import Container from "@/app/(components)/Container";
 import { useCount } from "@/app/zustand/store";
+import { Box } from "@chakra-ui/react";
 
 export default function Count() {
   const count = useCount();
-  return <Container>Count: {count}</Container>;
+  return <Box>Count: {count}</Box>;
 }
